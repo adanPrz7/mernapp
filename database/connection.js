@@ -1,4 +1,5 @@
 const mongoose = require("mongoose");
+mongoose.set('strictQuery', false);
 const connection = async() =>{
     try{
         await mongoose.connect("mongodb://85.31.235.228:27017/pdsbandw");
