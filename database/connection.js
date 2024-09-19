@@ -2,7 +2,7 @@ const mongoose = require("mongoose");
 mongoose.set('strictQuery', false);
 const connection = async() =>{
     try{
-        await mongoose.connect("mongodb://85.31.235.228:27017/pdsbandw");
+        await mongoose.connect("mongodb://127.0.0.1:27017/pdsbandw");
         console.log("Success db");
     }catch(error){
         console.log(error);
